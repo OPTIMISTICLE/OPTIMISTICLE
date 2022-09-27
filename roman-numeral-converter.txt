@@ -1,0 +1,68 @@
+let millier = ['M', 'MM', 'MMM'];
+let centaine = ['C', 'CC', 'CCC', 'CD', 'D', 'DC', 'DCC', 'DCCC', 'CM'];
+let dizaine = ['X', 'XX', 'XXX', 'XL', 'L', 'LX', 'LXX', 'LXXX', 'XC'];
+let unite = ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX'];
+
+function millierToRoman(mille){
+  let result ='';
+  if (mille >=1000){
+  let nombre = (mille-mille%1000)/1000;
+  if(nombre >0) {
+  result = millier[nombre-1];
+  return result;
+  }
+  } else {
+    return result;
+  }
+}
+
+function centaineToRoman (cent){
+  let result ='';
+  if (cent >99) {
+  let nombre = (cent-cent%100)/100;
+  if (nombre >0){
+  result = centaine[nombre-1];
+  return result;
+  }
+  } else {
+    return result;
+  }
+}
+function dizaineToRoman (dix) {
+  let result ='';
+  if (dix >9) {
+  let nombre = (dix-dix%10)/10 ;
+  if (nombre >0){
+  result = dizaine[nombre-1];
+  return result;
+  }
+  } else {
+    return result;
+  }
+}
+function uniteToRoman (unit){
+let result ='';
+if(unit <10 && unit > 0){
+  result = unite[unit-1];
+  return result;
+}else {
+  return result;
+}
+}
+
+
+function convertToRoman(num) {
+  let reste;
+  let result ='';
+    result +=millierToRoman(num) ;
+    reste = num%1000;
+    result +=centaineToRoman(reste) ;
+    reste = reste%100;
+    result +=dizaineToRoman(reste) ;
+    reste = reste%10 ;
+    result +=uniteToRoman(reste) ;
+    num = result;
+return num;
+}
+
+convertToRoman(36);
