@@ -1,7 +1,7 @@
 - 👋 Hi, I’m @OPTIMISTICLE
-- 👀 I’m interested in playing basketball, reading and learning
-- 🌱 I’m currently learning Python 
-- 💞️ I’m looking to collaborate on a Python project in order to improve my skills
+- 👀 I’m interested in designing software system, reading and learning
+- 🌱 I’m currently learning TOGAF, AWS Solution Architect
+- 💞️ I’m looking to collaborate on any project you have
 - 📫 How to reach me ? by whatsapp : +225 076716592
 
 <!---
